@@ -1,0 +1,68 @@
+/* book1.css */
+
+/* Container styling */
+.container {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+/* Image styling */
+img.img-fluid {
+    max-width: 100%;
+    height: 500px;
+    border-radius: 10px; /* Adds rounded corners to the image */
+}
+
+/* Title styling */
+h1.display-4 {
+    font-size: 2.5rem; /* Adjust size as needed */
+    font-weight: bold;
+    color: #333; /* Darker color for better readability */
+}
+
+/* Subtitle styling */
+h4.text-muted {
+    font-size: 1.5rem;
+    color: #6c757d; /* Muted text color */
+}
+
+/* Author Name styling */
+p.text-secondary {
+    font-size: 1.25rem;
+    color: #6c757d; /* Secondary text color */
+}
+
+/* Short Description styling */
+p {
+    font-size: 1rem;
+    color: #555; /* Dark gray text color for better readability */
+    line-height: 1.6; /* Increases line height for readability */
+    text-align: justify; /* Justifies text for a cleaner look */
+}
+
+/* Buttons styling */
+.btn {
+    font-size: 1rem;
+    padding: 10px 20px;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+}
+
+.btn-success {
+    background-color: #28a745;
+    border: none;
+}
+
+/* Footer styling */
+footer {
+    background-color: #f8f9fa;
+    padding: 20px 0;
+}
+
+footer .text-center {
+    font-size: 0.875rem;
+    color: #495057; /* Dark gray text color */
+}

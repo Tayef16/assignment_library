@@ -1,0 +1,367 @@
+/* Background Design */
+body {
+    background: linear-gradient(to bottom right, #f0f4f8, #e0e7ec);
+    color: #333;
+}
+
+
+/* Navbar background color */
+.navbar {
+    background-color: #0056b3; /* Change this to your preferred color */
+}
+
+
+/* Navbar brand (logo/text) color */
+.navbar-brand {
+    color: #000000; /* Change this to your preferred color */
+}
+
+/* Navbar links color */
+.navbar-nav .nav-link {
+    color: #000000; /* Change this to your preferred color */
+}
+
+/* Navbar links color on hover */
+.navbar-nav .nav-link:hover {
+    color: #0122ff; /* Change this to your preferred hover color */
+}
+
+/* Active link color */
+.navbar-nav .nav-link.active {
+    color: #ffcc00; /* Change this to your preferred active link color */
+}
+
+/* Navbar-toggler button color */
+.navbar-toggler-icon {
+    background-color: #ffffff; /* Change this to your preferred color */
+}
+
+/* Adjust spacing for navbar items */
+.navbar-nav {
+    margin: 0 auto; /* Center-align items */
+    display: flex;
+    justify-content: center; /* Center-align items within the navbar */
+}
+
+/* Custom styling for the collapsed navbar */
+.navbar-collapse {
+    justify-content: center; /* Center-align items in the collapsed state */
+}
+/* Header Banner Styling */
+header.jumbotron {
+    background-color: #f8f9fa; /* Light gray background */
+    padding: 1rem 1rem; /* Padding to give space around the content */
+    text-align: center; /* Center-align the text */
+    border-bottom: 2px solid #0056b3; /* Adds a blue bottom border */
+}
+
+header.jumbotron .container {
+    max-width: 800px; /* Limits the width of the content */
+    margin: 0 auto; /* Centers the container */
+}
+
+header.jumbotron .display-4 {
+    font-size: 3rem; /* Large font size for the main heading */
+    font-weight: bold; /* Bold font weight */
+    color: #0056b3; /* Blue color for the heading */
+    margin-bottom: 1rem; /* Space below the heading */
+}
+
+header.jumbotron .lead {
+    font-size: 1.25rem; /* Slightly larger font size for the subheading */
+    color: #333; /* Dark gray color for the subheading */
+    margin-bottom: 2rem; /* Space below the subheading */
+}
+
+header.jumbotron .form-inline {
+    display: flex; /* Flexbox for alignment */
+    justify-content: center; /* Center-align the search form */
+}
+
+header.jumbotron .form-control {
+    width: 300px; /* Width of the search input field */
+}
+
+header.jumbotron .btn {
+    margin-left: 0.5rem; /* Space between input and search button */
+}
+/* General Styling */
+.container h2 {
+    text-align: center;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.card {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card img {
+    border-radius: 5px;
+}
+
+.card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #555;
+}
+
+.card-text {
+    color: #777;
+    font-size: 0.9rem;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.card-body {
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s ease;
+}
+
+.card img:hover {
+    transform: scale(1.05);
+}
+
+.card-body h5 {
+    margin-bottom: 10px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .card-body {
+        padding: 15px;
+    }
+
+    .card-title {
+        font-size: 1rem;
+    }
+
+    .card-text {
+        font-size: 0.8rem;
+    }
+}
+/* General Styling */
+.container h2 {
+    text-align: center;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 40px;
+    font-size: 2rem;
+    letter-spacing: 0.05em;
+}
+
+.card {
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #fff;
+}
+
+.card-img-top {
+    border-radius: 10px 10px 0 0;
+    transition: transform 0.3s ease;
+    object-fit: cover;
+    height: 250px;
+}
+
+.card-body {
+    padding: 20px;
+    text-align: center;
+    background-color: #f8f9fa;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 10px;
+    transition: color 0.3s ease;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #777;
+    margin-bottom: 15px;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+}
+
+.card-img-top:hover {
+    transform: scale(1.1);
+}
+
+.card-title:hover {
+    color: #007bff;
+}
+
+.card-body {
+    position: relative;
+}
+
+.card-body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.5) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0.5) 75%, transparent 75%, transparent);
+    background-size: 20px 20px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.card:hover .card-body::before {
+    opacity: 1;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .card-body {
+        padding: 15px;
+    }
+
+    .card-title {
+        font-size: 1.2rem;
+    }
+
+    .card-text {
+        font-size: 0.9rem;
+    }
+
+    .card-img-top {
+        height: 200px;
+    }
+}
+/* Top Authors Section */
+.container h2 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2.5rem;
+    font-weight: 600;
+    text-align: center;
+    color: #333;
+    margin-bottom: 2rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+/* Card Styling */
+.card {
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background: linear-gradient(to bottom right, #f8f9fa, #e9ecef);
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-img-top {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #007bff;
+}
+
+.card-text {
+    font-size: 0.9rem;
+    color: #6c757d;
+}
+
+.card-body {
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.container .row {
+    display: flex;
+    justify-content: center;
+}
+
+/* Responsive Tweaks */
+@media (max-width: 768px) {
+    .card {
+        margin-bottom: 20px;
+    }
+}
+/* Footer Styling */
+footer {
+    background-color: #f8f9fa;
+    color: #333;
+    padding: 20px 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-top: 1px solid #ddd;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #6c757d;
+}
+
+footer a {
+    color: #007bff;
+    text-decoration: none;
+    margin: 0 5px;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+footer .container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+footer p a {
+    font-weight: 600;
+}
+
+footer p:last-of-type {
+    margin-top: 10px;
+}
+
+/* Social Media Links */
+footer p:last-of-type a {
+    font-size: 1.2rem;
+    padding: 0 10px;
+    vertical-align: middle;
+}
+
+/* Responsive Design */
+@media (max-width: 576px) {
+    footer p {
+        font-size: 0.85rem;
+    }
+
+    footer p a {
+        display: block;
+        margin: 5px 0;
+    }
+}
